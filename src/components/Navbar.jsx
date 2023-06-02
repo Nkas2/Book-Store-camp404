@@ -12,10 +12,10 @@ const Navbar = () => {
                </li>
                <li>
                   <a href="/manajemen" className="nav-link">
-                     Manajemen Buku
+                     Manajemen Buku Men
                   </a>
                </li>
-            </ul>
+            </ul> 
          </div>
       </nav>
    )
