@@ -1,5 +1,6 @@
 import React from "react";
 import logo from './../assets/camp404v2.png';
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
    return (
@@ -8,12 +9,12 @@ const Navbar = () => {
             <ul className="nav">
                <img src={logo} alt="" style={{height: "40px"}}/>
                <li>
-                  <a href="/" className="nav-link">Beranda</a>
+                  <Link to="/" className="nav-link">Beranda</Link>
                </li>
                <li>
-                  <a href="/manajemen" className="nav-link">
-                     Manajemen Buku Men
-                  </a>
+                  <Link to="/manajemen-buku" className="nav-link">
+                     Manajemen Buku
+                  </Link>
                </li>
             </ul> 
          </div>

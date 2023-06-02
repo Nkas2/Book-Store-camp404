@@ -1,10 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
 import Beranda from './components/Beranda';
+import Navbar from './components/Navbar';
+import ManajemenBuku from './components/ManajemenBUku';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 
 function App() {
   return (
-    <Beranda />
+    <div>
+      <BrowserRouter>
+        <Navbar />
+
+        <Routes>
+          <Route path="/" exact element={<Beranda />} />
+          <Route path="/manajemen-buku" element={<ManajemenBuku />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 
